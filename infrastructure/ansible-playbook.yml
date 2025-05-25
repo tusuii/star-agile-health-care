@@ -18,6 +18,10 @@
     become : yes
     become_user : root
 
+  - name : Start installing jenkins 
+    command : wget https://github.com/akshu20791/Deployment-script/blob/main/jenkins.sh && chmod +x jenkins.sh && ./jenkins.sh  
+    become : yes
+    become_user : root
 
   - name: Deploy Docker Container
     command: docker run -itd -p 8084:8082 subkamble/medicure:1.0
