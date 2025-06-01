@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: healthcare-app
-        image: healthcare-app:latest
+        image: subkamble/healthcare-app:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 8082
